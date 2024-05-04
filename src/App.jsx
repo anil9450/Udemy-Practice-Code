@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import reactImg from './assets/react_logo.webp';
+import { CORE_CONCEPT } from "./data";
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
@@ -52,22 +53,12 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
-            <CoreConcept
-              title="Components"
-              description="The core UI building block"
-              image={reactImg} />
-            <CoreConcept
-              title="Components"
-              description="The core UI building block"
-              image={reactImg} />
-            <CoreConcept
-              title="Components"
-              description="The core UI building block"
-              image={reactImg}
-            />
+            <CoreConcept {...CORE_CONCEPT[0]} />
+            <CoreConcept {...CORE_CONCEPT[1]} />
+            <CoreConcept {...CORE_CONCEPT[2]} />
+            <CoreConcept {...CORE_CONCEPT[3]} />
           </ul>
         </section>
-
       </main>
     </>
   )
